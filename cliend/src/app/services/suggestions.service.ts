@@ -22,7 +22,7 @@ restaurantPlaceApi(lat,lan){
 let headers = new Headers();
 
 headers.append('Content-Type', 'application/x-www-form-urlencoded');
-headers.append('Access-Control-Allow-Origin','https://go-ami-go.herokuapp.com');
+headers.append('Access-Control-Allow-Origin','https://goamigo-mohit.herokuapp.com');
 return this.http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lan+'&radius=1000&type=restaurant&key=AIzaSyDgQfG6Y-bbidUjlgoNX8SotR2ofd2H9kA',{headers: headers})
 .map(res => res.json())
 .catch(this.handleError);
@@ -32,7 +32,7 @@ atmPlaceApi(lat,lan){
 	let headers = new Headers();
 
 headers.append('Content-Type', 'application/x-www-form-urlencoded');
-headers.append('Access-Control-Allow-Origin','https://go-ami-go.herokuapp.com');
+headers.append('Access-Control-Allow-Origin','https://goamigo-mohit.herokuapp.com');
 return this.http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lan+'&radius=1000&type=atm&key=AIzaSyDgQfG6Y-bbidUjlgoNX8SotR2ofd2H9kA',{headers: headers})
 			.map(res1 => res1.json())
 			.catch(this.handleError);

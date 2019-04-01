@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class UtilityService {
 
-domain = "https://go-ami-go.herokuapp.com";
+domain = "https://goamigo-mohit.herokuapp.com";
 public constructor(private http: Http){}
 
   isLoggedIn(){

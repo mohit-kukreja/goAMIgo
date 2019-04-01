@@ -602,7 +602,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var uri = 'https://go-ami-go.herokuapp.com/files/imgtodb';
+var uri = 'https://goamigo-mohit.herokuapp.com/files/imgtodb';
 var FileuploadComponent = /** @class */ (function () {
     function FileuploadComponent(usertripservice, fileService, planservice, http) {
         var _this = this;
@@ -1868,7 +1868,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AuthenticationService = /** @class */ (function () {
     function AuthenticationService(http) {
         this.http = http;
-        this.domain = "https://go-ami-go.herokuapp.com";
+        this.domain = "https://goamigo-mohit.herokuapp.com";
     }
     // Function to register user accounts
     AuthenticationService.prototype.registerUser = function (user) {
@@ -1914,7 +1914,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ChatService = /** @class */ (function () {
     function ChatService(http) {
         this.http = http;
-        this.domain = "https://go-ami-go.herokuapp.com";
+        this.domain = "https://goamigo-mohit.herokuapp.com";
     }
     ChatService.prototype.getChatsByTripId = function (tripId) {
         console.log(tripId);
@@ -1977,7 +1977,7 @@ var FileService = /** @class */ (function () {
     // downloadFile(file:String){
     //     var body = {filename:file};
     //     console.log("filename", file)
-    //     return this.http.post('https://go-ami-go.herokuapp.com/file/download',body,{
+    //     return this.http.post('https://goamigo-mohit.herokuapp.com/file/download',body,{
     //         responseType : 'blob',
     //         headers:new HttpHeaders().append('Content-Type','application/json')
     //     });
@@ -2008,10 +2008,10 @@ var FileService = /** @class */ (function () {
     };
     FileService.prototype.getImages = function (tripId) {
         console.log("trip id in file service", tripId);
-        return this.http.get('https://go-ami-go.herokuapp.com/files/getimages?tripId=' + tripId).map(function (res) { return res.json(); });
+        return this.http.get('https://goamigo-mohit.herokuapp.com/files/getimages?tripId=' + tripId).map(function (res) { return res.json(); });
     };
     FileService.prototype.sendTripIdToImageServer = function (tripId) {
-        return this.http.post('https://go-ami-go.herokuapp.com/files/imgtodb', tripId).map(function (res) { return res.json(); });
+        return this.http.post('https://goamigo-mohit.herokuapp.com/files/imgtodb', tripId).map(function (res) { return res.json(); });
     };
     FileService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
@@ -2273,7 +2273,7 @@ var SuggestionsService = /** @class */ (function (_super) {
     SuggestionsService.prototype.restaurantPlaceApi = function (lat, lan) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');
-        headers.append('Access-Control-Allow-Origin', 'https://go-ami-go.herokuapp.com');
+        headers.append('Access-Control-Allow-Origin', 'https://goamigo-mohit.herokuapp.com');
         return this.http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + lan + '&radius=1000&type=restaurant&key=AIzaSyDgQfG6Y-bbidUjlgoNX8SotR2ofd2H9kA', { headers: headers })
             .map(function (res) { return res.json(); })
             .catch(this.handleError);
@@ -2281,7 +2281,7 @@ var SuggestionsService = /** @class */ (function (_super) {
     SuggestionsService.prototype.atmPlaceApi = function (lat, lan) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');
-        headers.append('Access-Control-Allow-Origin', 'https://go-ami-go.herokuapp.com');
+        headers.append('Access-Control-Allow-Origin', 'https://goamigo-mohit.herokuapp.com');
         return this.http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + lan + '&radius=1000&type=atm&key=AIzaSyDgQfG6Y-bbidUjlgoNX8SotR2ofd2H9kA', { headers: headers })
             .map(function (res1) { return res1.json(); })
             .catch(this.handleError);
@@ -2324,7 +2324,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TransactionService = /** @class */ (function () {
     function TransactionService(http) {
         this.http = http;
-        this.domain = "https://go-ami-go.herokuapp.com";
+        this.domain = "https://goamigo-mohit.herokuapp.com";
     }
     TransactionService.prototype.saveTransaction = function (transaction) {
         console.log("tx" + transaction);
@@ -2374,7 +2374,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var UsertripService = /** @class */ (function () {
     function UsertripService(http) {
         this.http = http;
-        this.domain = "https://go-ami-go.herokuapp.com";
+        this.domain = "https://goamigo-mohit.herokuapp.com";
     }
     UsertripService.prototype.saveTripDetails = function (usertrip) {
         //this.saveTrip(usertrip);
@@ -2434,7 +2434,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var UtilityService = /** @class */ (function () {
     function UtilityService(http) {
         this.http = http;
-        this.domain = "https://go-ami-go.herokuapp.com";
+        this.domain = "https://goamigo-mohit.herokuapp.com";
     }
     UtilityService.prototype.isLoggedIn = function () {
         if (typeof (Storage) !== 'undefined') {

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class TransactionService {
 
-  domain = "https://go-ami-go.herokuapp.com";
+  domain = "https://goamigo-mohit.herokuapp.com";
   transaction;
 
   constructor(private http: Http) { }

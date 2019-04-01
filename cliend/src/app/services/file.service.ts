@@ -21,7 +21,7 @@ export class FileService {
 
     //     console.log("filename", file)
 
-    //     return this.http.post('https://go-ami-go.herokuapp.com/file/download',body,{
+    //     return this.http.post('https://goamigo-mohit.herokuapp.com/file/download',body,{
     //         responseType : 'blob',
     //         headers:new HttpHeaders().append('Content-Type','application/json')
     //     });
@@ -60,12 +60,12 @@ export class FileService {
 
     getImages(tripId){
         console.log("trip id in file service", tripId);
-        return this.http.get('https://go-ami-go.herokuapp.com/files/getimages?tripId='+tripId).map(res=>res.json())
+        return this.http.get('https://goamigo-mohit.herokuapp.com/files/getimages?tripId='+tripId).map(res=>res.json())
     }
 
     sendTripIdToImageServer(tripId){
         
-        return this.http.post('https://go-ami-go.herokuapp.com/files/imgtodb',tripId).map(res=>res.json())
+        return this.http.post('https://goamigo-mohit.herokuapp.com/files/imgtodb',tripId).map(res=>res.json())
     }
 
 }

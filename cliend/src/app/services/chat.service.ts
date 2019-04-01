@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 
 export class ChatService {
 
- domain = "https://go-ami-go.herokuapp.com";
+ domain = "https://goamigo-mohit.herokuapp.com";
 
  constructor(private http: Http) { }
 
