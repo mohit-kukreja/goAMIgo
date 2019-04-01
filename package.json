@@ -4,8 +4,7 @@
   "description": "go-amigo",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index",
-    "heroku-postbuild": "cd cliend && npm install"
+    "start": "node ./index"
   },
   "keywords": [
     "mean",
