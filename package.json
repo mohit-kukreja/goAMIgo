@@ -13,7 +13,8 @@
     "goamigo"
   ],
   "engines": {
-    "node": "8.11.1"
+    "node": "8.11.1",
+    "npm": "4.6.1"
   },
   "author": "",
   "license": "ISC",
