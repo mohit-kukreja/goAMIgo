@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="row" align="left">
+  <div class="col-md-12">
+    <a class="navbar-brand">Individual trips</a>
+    <tabset vertical ="true">
+
+    <tab>
+      <span *tabHeading>
+          <b style="color: deepskyblue">Manage Budget</b>
+      </span>
+      <app-budget></app-budget>
+    
+  </tab>
+  <tab>
+    <span *tabHeading>
+        <b style="color: deepskyblue">Trip media</b>
+    </span>
+        <app-image-gallery></app-image-gallery>
+        <app-fileupload></app-fileupload>
+  </tab>
+ 
+<tab>
+    <span *tabHeading>
+        <b style="color: deepskyblue">Suggestions</b>
+    </span>
+    <app-suggestion></app-suggestion>
+
+</tab>
+
+    </tabset>
+    

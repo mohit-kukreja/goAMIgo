@@ -1,0 +1,10 @@
+<div class="container">
+        <div class="row">
+            <button id="viewimages" name="viewimages" class="btn btn-primary" (click)="viewImages()"> view Images</button>
+            <ul id = "thumbnailist">
+                <li *ngFor ="let image of ImageList">
+                        <img src="{{image}}" class="tn">
+                </li>
+            </ul>
+        </div>
+      </div>
