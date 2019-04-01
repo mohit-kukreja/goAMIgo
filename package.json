@@ -4,7 +4,6 @@
   "description": "go-amigo",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "cd cliend && npm install",
     "start": "node ./index"
   },
   "keywords": [
@@ -16,7 +15,7 @@
     "node": "8.11.1",
     "npm": "4.6.1"
   },
-  "author": "",
+  "author": "mohit-kukreja",
   "license": "ISC",
   "dependencies": {
     "@types/jquery": "^3.3.1",

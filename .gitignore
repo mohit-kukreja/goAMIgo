@@ -6,3 +6,5 @@ package-lock.json
 cliend/package-lock.json
 .vscode/
 cliend/dist
+routes/
+Gruntfile.js
