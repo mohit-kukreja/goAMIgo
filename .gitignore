@@ -1,6 +1,7 @@
 
 
-./node_modules
-./cliend/node_modules
-./package-lock.json
-./cliend/package-lock.json
+node_modules/
+cliend/node_modules/
+package-lock.json
+cliend/package-lock.json
+.vscode/
