@@ -4,6 +4,7 @@
   "description": "go-amigo",
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "cd cliend && npm install",
     "start": "node ./index"
   },
   "keywords": [
